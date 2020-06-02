@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Shipt Email Design System | Components | Buttons</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&display=swap" rel="stylesheet">
+   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+   <link rel="stylesheet" href="css/prism.css">
+   <style type="text/css">
+      @font-face {
+         font-family:   'Boing-Light';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.ttf') format('truetype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Regular';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Medium';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Bold';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Claremont';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Claremont.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Claremont.woff') format('woff');
+      }
+
+      /*                */
+      /*     base       */
+      /*                */
+      h1,
+      p {
+         margin:           0        !important;
+         padding:          0        !important;
+      }
+
+      h1 {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        38px;
+         line-height:      30px;
+         margin:           0;
+      }
+      h2 {
+         color:            #5c5362;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        14px;
+         letter-spacing:   1px;
+         line-height:      14px;
+         text-transform:   uppercase;
+      }
+      /*----------------*/
+
+      .bg-oatmeal {
+         background-color: #f7f4ea;
+      }
+
+
+      /*                */
+      /*   navigation   */
+      /*                */
+      .navbar {
+         background-color: #241239 !important;
+      }
+      .nav--title {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+      }
+      .sub-nav--title {
+         color:            #23cc6b;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+
+      }
+      .nav-link {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+         padding-bottom:   7px         !important;
+         padding-left:     5px         !important;
+         padding-top:      7px         !important;
+      }
+      .indent {
+         padding-left:     16px        !important;
+      }
+      .nav-link:hover {
+         background-color: #fef2d1;
+      }
+      .nav-link a {
+         color:            #382f40;
+         text-decoration:  none;
+      }
+      .active {
+         color:            #23cc6b     !important;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    tooltips    */
+      /*                */
+      .tooltip,
+      .tooltip-inner {
+         color: #ffffff !important;
+         font-family: 'Boing-Regular', Arial, sans-serif !important;
+         font-size: 14px !important;
+         letter-spacing: .5px !important;
+         line-height: 26px !important;
+      }
+      .tooltip-inner {
+         box-shadow:0 2px 15px 0 rgba(0, 0, 0, .5);
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    buttons     */
+      /*                */
+      .btn-circle {
+         border-radius: 8px;
+         box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1);
+         height: 45px;
+         line-height: 45px;
+         padding: 0;
+         text-align: center;
+         width: 45px;
+      }
+      .btn-circle i {
+         position: relative;
+      }
+      .btn-circle-sm {
+         font-size: 12px;
+         height: 25px;
+         line-height: 25px;
+         width: 25px;
+      }
+      .btn-circle-lg {
+         font-size: 1.1rem;
+         height: 55px;
+         line-height: 55px;
+         width: 55px;
+      }
+      .btn-circle-xl {
+         font-size: 1.3rem;
+         height: 70px;
+         line-height: 70px;
+         width: 70px;
+      }
+      /*----------------*/
+
+      .collapsing {
+         -webkit-transition: none;
+         transition: none;
+         display: none;
+      }
+
+      .ex--p--btn {
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        16px;
+         font-weight:      normal;
+         letter-spacing:   .5px;
+         line-height:      16px;
+      }
+      .ex--p--btn-secondary {
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        16px;
+         font-weight:      normal;
+         letter-spacing:   normal;
+         line-height:      16px;
+      }
+      .ex--p--shiptgreen {
+         color: #038767;
+      }
+
+      .ex--btn {
+         border-radius:          8px;
+         padding:                24px 48px;
+         transition:             all 300ms ease-in;
+         -moz-border-radius:     8px;
+         -webkit-border-radius:  8px;
+      }
+      .ex--btn-secondary {
+         padding-bottom:         8px;
+         transition:             all 500ms ease-in;
+      }
+      .ex--btn--bg-shiptgreen {
+         background-color:       #038767;
+         color:                  #ffffff;
+      }
+      .ex--btn--bg-shiptgreen:hover {
+         background-color:       #026c52 !important;
+         color:                  #ffffff !important;
+         text-decoration:         none;
+      }
+      .ex--btn--bg-white {
+         background-color:       #ffffff;
+         border:                 solid 1px #382f40;
+         color:                  #382f40;
+      }
+      .ex--btn--bg-white:hover {
+         background-color:       #382f40 !important;
+         color:                  #ffffff !important;
+         text-decoration:         none;
+      }
+      .ex--btn-secondary--plum {
+         border-bottom:          2px solid #038767 !important;
+         color:                  #241239;
+         text-decoration:        none;
+      }
+      .ex--btn-secondary--plum:hover {
+         border-bottom:          2px solid #038767 !important;
+         color:                  #038767 !important;
+         text-decoration:         none;
+      }
+
+
+   </style>
+</head>
+<body>
+
+<nav class="navbar">
+   <div class="container-xl pb-2 pl-0 pt-2">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff;">
+         <img alt="Shipt" class="d-inline-block" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_white_1407x465.png" width="67">
+         <span class="m-0 p-0" style="font-family: 'Boing-Medium', Arial; font-size: 18px; letter-spacing: .5px; line-height: 24px;">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email Design System</span>
+      </a>
+   </div>
+</nav>
+
+<div class="container-xl pt-4">
+   <div class="row row-cols-3">
+
+
+
+      <div class="col-2 pt-4">
+
+         <p class="nav--title pb-2">
+            Guidelines
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="index.html">
+                  Getting started
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="best-practice.html">
+                  Best practice
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  FAQ
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Base
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="boilerplate.html">
+                  Boilerplate
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="css.html">
+                  CSS
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="grid.html">
+                  Grid
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Styles
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="colors.html">
+                  Colors
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Iconography
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="logos.html">
+                  Logos
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="typography.html">
+                  Typography
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Components
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Borders
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a class="active" 
+               href="buttons.html">
+                  <span class="octicon octicon-location"></span>
+                  &nbsp;
+                  Buttons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="footers.html">
+                  Footers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="headers.html">
+                  Headers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="icons.html">
+                  Icons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="images.html">
+                  Images
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Links
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Promo bars
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Templates
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Transactional
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Member
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Shopper
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+
+      <!--                       -->
+      <!--       main column     -->
+      <!--                       -->
+
+      <div class="col-8 pb-4 pl-4 pr-4 pt-4">
+
+         <h1 class="pb-4">Buttons</h1>
+
+
+         <h2 class="border-bottom pb-3 pt-4" id="logos-primary">Primary button</h2>
+
+         <div class="pb-4">
+            <div class="mb-3 mt-4">
+               <a class="align-middle divPrimary" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" role="button" target="PrimaryComp" type="button">
+                  Component
+               </a>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divPrimary" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" role="button" target="PrimaryCSS" type="button">
+                  CSS
+               </a> 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divPrimary" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" role="button" target="PrimaryCode" type="button">
+                  HTML
+               </a> 
+            </div>
+            <div>
+               <div class="card collapse mt-4 pb-4 pt-4 shadow show targetDivPrimary" id="divPrimaryComp">
+                  <table align="center" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%;" width="600">
+                     <tr>
+                        <td align="center" class="pb-4 pt-4">
+                           <table role="presentation">
+                               <tr>
+                                 <td class="pb-4 pt-4"><p class="ex--p--btn" style="margin:0; padding:0;"><a class="ex--btn ex--btn--bg-shiptgreen" href="${clickthrough('cta_ShopNow')}">Shop Now</a></p></td>
+                               </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivPrimary" id="divPrimaryCSS">
+                  <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+                     .p--btn {
+                        font-family:            'Boing-Medium', Arial, sans-serif;
+                        font-size:              16px;
+                        font-weight:            normal;
+                        letter-spacing:         .5px;
+                        line-height:            16px;
+                     }
+                     .btn {
+                        border-radius:          8px;
+                        padding:                24px 48px;
+                        transition:             all 300ms ease-in;
+                        -moz-border-radius:     8px;
+                        -webkit-border-radius:  8px;
+                     }
+                     .btn--bg-shiptgreen {
+                        background-color:       #038767;
+                        color:                  #ffffff;
+                     }
+                     .btn--bg-shiptgreen:hover {
+                        background-color:       #026c52 !important;
+                        color:                  #ffffff !important;
+                     }
+                  </script>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivPrimary" id="divPrimaryCode">
+                  <script class="border-0 language-html m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <!--[if mso]>
+               <table align="center" bgcolor="#038767" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                     <td style="padding-bottom:24px; padding-left:40px; padding-right:40px; padding-top:24px;">
+               <![endif]-->
+
+                  <a class="btn p--btn btn--bg-shiptgreen" href="${clickthrough('[LINK_NAME]')}" style="background-color:#038767; border-radius:8px; color:#ffffff; display:inline-block; font-family:'Boing-Regular', Arial, sans-serif; font-size:16px; font-weight:bold; letter-spacing:.5px; line-height:16px; padding-bottom:24px; padding-left:64px; padding-right:64px; padding-top:24px; text-decoration:none; -moz-border-radius:8px; -webkit-border-radius:8px;">
+                        Spend $12, Get&nbsp;$3
+                     </a>
+
+               <!--[if mso]>
+                     </td>
+                  </tr>
+               </table>
+               <![endif]-->
+                  </script>
+               </div>
+            </div>
+         </div>
+
+
+         <h2 class="border-bottom pb-3 pt-4" id="logos-primary">Primary button (Alt)</h2>
+
+         <div class="pb-4">
+            <div class="mb-3 mt-4">
+               <a class="align-middle divPrimaryAlt" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="PrimaryAltComp" type="button">
+                  Component
+               </a>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divPrimaryAlt" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="PrimaryAltCSS" type="button">
+                  CSS
+               </a> 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divPrimaryAlt" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="PrimaryAltCode" type="button">
+                  HTML
+               </a> 
+            </div>
+            <div>
+               <div class="card collapse mt-4 pb-4 pt-4 shadow show targetDivPrimaryAlt" id="divPrimaryAltComp">
+                  <table align="center" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%;" width="600">
+                     <tr>
+                        <td align="center" class="pb-4 pt-4">
+                           <table role="presentation">
+                               <tr>
+                                 <td class="pb-4 pt-4"><p class="ex--p--btn" style="margin:0; padding:0;"><a class="ex--btn ex--btn--bg-white" href="${clickthrough('cta_ShopNow')}">Shop Now</a></p></td>
+                               </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivPrimaryAlt" id="divPrimaryAltCSS">
+                  <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+                     .p--btn {
+                        font-family:            'Boing-Medium', Arial, sans-serif;
+                        font-size:              16px;
+                        font-weight:            normal;
+                        letter-spacing:         .5px;
+                        line-height:            16px;
+                     }
+                     .btn {
+                        border-radius:          8px;
+                        padding:                24px 48px;
+                        transition:             all 300ms ease-in;
+                        -moz-border-radius:     8px;
+                        -webkit-border-radius:  8px;
+                     }
+                     .btn--bg-white {
+                        background-color:       #ffffff;
+                        border:                 solid 1px #382f40;
+                        color:                  #382f40;
+                     }
+                     .btn--bg-white:hover {
+                        background-color:       #382f40 !important;
+                        color:                  #ffffff !important;
+                     }
+                  </script>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivPrimaryAlt" id="divPrimaryAltCode">
+                  <script class="border-0 language-markup m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+                     <tr>
+                        <td align="center" style="padding-top:32px;">
+                           <!--[if gte mso 9]>
+                           <table align="center" bgcolor="#ffffff" border="1" bordercolor="#382f40" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                 <td style="padding-bottom:24px; padding-left:40px; padding-right:40px; padding-top:24px;">
+                           <![endif]-->
+                           <table role="presentation">
+                               <tr>
+                                 <td>
+                                    <p class="p--btn">
+                                       <a class="btn btn--bg-white" href="${clickthrough('cta_ShopNow')}">
+                                          Shop Now
+                                       </a>
+                                    </p>
+                                 </td>
+                               </tr>
+                           </table>
+                           <!--[if gte mso 9]>
+                                 </td>
+                              </tr>
+                           </table>
+                           <![endif]-->
+                        </td>
+                     </tr>
+                  </script>
+               </div>
+            </div>
+         </div>
+
+
+         <h2 class="border-bottom pb-3 pt-4" id="logos-primary">Secondary button</h2>
+
+         <div class="mb-4 pb-4">
+            <div class="mb-3 mt-4">
+               <a class="align-middle divSecondary" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="SecondaryComp" type="button">
+                  Component
+               </a>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divSecondary" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="SecondaryCSS" type="button">
+                  CSS
+               </a> 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a class="align-middle divSecondary" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; line-height: 18px;" target="SecondaryCode" type="button">
+                  HTML
+               </a> 
+            </div>
+            <div class="pb-4">
+               <div class="card collapse mt-4 pb-4 pt-4 shadow show targetDivSecondary" id="divSecondaryComp">
+                  <table align="center" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%;" width="600">
+                     <tr>
+                        <td align="center" class="pb-4 pt-4">
+                           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="margin:0; padding:0;">
+                              <tr>
+                                 <td align="center">
+                                    <p class="ex--p--btn-secondary"><a href="${clickthrough('cta_ReadMore')}" class="ex--btn-secondary ex--btn-secondary--plum">Read more</a></p>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivSecondary" id="divSecondaryCSS">
+                  <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+                     .p--btn-secondary {
+                        font-family:            'Boing-Medium', Arial, sans-serif;
+                        font-size:              16px;
+                        font-weight:            normal;
+                        letter-spacing:         normal;
+                        line-height:            16px;
+                     }
+                     .btn-secondary {
+                        padding-bottom:         8px;
+                        transition:             all 300ms ease-in;
+                     }
+                     .btn-secondary--plum {
+                        border-bottom:          2px solid #038767 !important;
+                        color:                  #241239;
+                        text-decoration:        none;
+                     }
+                     .btn-secondary--plum:hover {
+                        border-bottom:          2px solid #038767 !important;
+                        color:                  #038767 !important;
+                     }
+                  </script>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4 targetDivSecondary" id="divSecondaryCode">
+                  <script class="border-0 language-markup m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+                     <tr>
+                        <td align="center" style="padding-bottom:80px; padding-top:24px;">
+                           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="margin:0; padding:0;">
+                              <tr>
+                                 <td align="center">
+                                    <p class="p--btn-secondary">
+                                       <a href="${clickthrough('cta_ReadMore')}" class="btn-secondary btn-secondary--plum">
+                                          Read more
+                                       </a>
+                                    </p>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </script>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+
+      <div class="col-2 pl-4 pt-4">
+         <p class="sub-nav--title pb-2">Sections</p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action py-0">Primary</div>
+            <div class="nav-link list-group-item-action py-0">Primary Alt</div>
+            <div class="nav-link list-group-item-action py-0">Secondary</div>
+         </div>
+      </div>
+
+
+
+   </div>
+</div>
+
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
+<script src="js/prism.js"></script>
+<script>
+   var clipboard = new ClipboardJS('.button-copy');
+   clipboard.on('success', function(e) {
+      console.log(e);
+   });
+   clipboard.on('error', function(e) {
+      console.log(e);
+   });
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+   });
+</script>
+<script>
+$(document).ready(function() { 
+   $('.divPrimary').click(function(){ 
+      jQuery('.targetDivPrimary').hide();
+      jQuery('#div'+jQuery(this).attr('target')).show();
+   });
+   $('.divPrimaryAlt').click(function(){ 
+      jQuery('.targetDivPrimaryAlt').hide();
+      jQuery('#div'+jQuery(this).attr('target')).show();
+   });
+   $('.divSecondary').click(function(){ 
+      jQuery('.targetDivSecondary').hide();
+      jQuery('#div'+jQuery(this).attr('target')).show();
+   });
+ })
+</script>
+
+</body>
+</html>

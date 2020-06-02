@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Shipt Email Design System | Components | Footers</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&display=swap" rel="stylesheet">
+   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+   <link rel="stylesheet" href="css/prism.css">
+   <style type="text/css">
+      @font-face {
+         font-family:   'Boing-Light';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.ttf') format('truetype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Regular';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Medium';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Bold';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Claremont';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Claremont.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Claremont.woff') format('woff');
+      }
+
+      /*                */
+      /*     base       */
+      /*                */
+      h1,
+      p {
+         margin:           0        !important;
+         padding:          0        !important;
+      }
+
+      h1 {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        38px;
+         line-height:      30px;
+         margin:           0;
+      }
+      h2 {
+         color:            #5c5362;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        14px;
+         letter-spacing:   1px;
+         line-height:      14px;
+         text-transform:   uppercase;
+      }
+      /*----------------*/
+
+      .bg-oatmeal {
+         background-color: #f7f4ea;
+      }
+
+
+      /*                */
+      /*   navigation   */
+      /*                */
+      .navbar {
+         background-color: #241239 !important;
+      }
+      .nav--title {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+      }
+      .sub-nav--title {
+         color:            #23cc6b;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+
+      }
+      .nav-link {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+         padding-bottom:   7px         !important;
+         padding-left:     5px         !important;
+         padding-top:      7px         !important;
+      }
+      .indent {
+         padding-left:     16px        !important;
+      }
+      .nav-link:hover {
+         background-color: #fef2d1;
+      }
+      .nav-link a {
+         color:            #382f40;
+         text-decoration:  none;
+      }
+      .active {
+         color:            #23cc6b     !important;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    tooltips    */
+      /*                */
+      .tooltip,
+      .tooltip-inner {
+         color: #ffffff !important;
+         font-family: 'Boing-Regular', Arial, sans-serif !important;
+         font-size: 14px !important;
+         letter-spacing: .5px !important;
+         line-height: 26px !important;
+      }
+      .tooltip-inner {
+         box-shadow:0 2px 15px 0 rgba(0, 0, 0, .5);
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    buttons     */
+      /*                */
+      .btn-circle {
+         border-radius: 8px;
+         box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1);
+         height: 45px;
+         line-height: 45px;
+         padding: 0;
+         text-align: center;
+         width: 45px;
+      }
+      .btn-circle i {
+         position: relative;
+      }
+      .btn-circle-sm {
+         font-size: 12px;
+         height: 25px;
+         line-height: 25px;
+         width: 25px;
+      }
+      .btn-circle-lg {
+         font-size: 1.1rem;
+         height: 55px;
+         line-height: 55px;
+         width: 55px;
+      }
+      .btn-circle-xl {
+         font-size: 1.3rem;
+         height: 70px;
+         line-height: 70px;
+         width: 70px;
+      }
+      /*----------------*/
+
+      .collapsing {
+         -webkit-transition: none;
+         transition: none;
+         display: none;
+      }
+
+   </style>
+</head>
+<body>
+
+<nav class="navbar">
+   <div class="container-xl pb-2 pl-0 pt-2">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff;">
+         <img alt="Shipt" class="d-inline-block" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_white_1407x465.png" width="67">
+         <span class="m-0 p-0" style="font-family: 'Boing-Medium', Arial; font-size: 18px; letter-spacing: .5px; line-height: 24px;">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email Design System</span>
+      </a>
+   </div>
+</nav>
+
+<div class="container-xl pt-4">
+   <div class="row row-cols-3">
+
+
+
+      <div class="col-2 pt-4">
+
+         <p class="nav--title pb-2">
+            Guidelines
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="index.html">
+                  Getting started
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="best-practice.html">
+                  Best practice
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  FAQ
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Base
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="boilerplate.html">
+                  Boilerplate
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="css.html">
+                  CSS
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="grid.html">
+                  Grid
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Styles
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="colors.html">
+                  Colors
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Iconography
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="logos.html">
+                  Logos
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="typography.html">
+                  Typography
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Components
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Borders
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="buttons.html">
+                  Buttons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a class="active" href="footers.html">
+                  <span class="octicon octicon-location"></span>
+                  &nbsp;
+                  Footers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="headers.html">
+                  Headers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="icons.html">
+                  Icons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="images.html">
+                  Images
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Links
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Promo bars
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Templates
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Transactional
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Member
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Shopper
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+
+      <!--                       -->
+      <!--       main column     -->
+      <!--                       -->
+
+      <div class="col-8 pl-4 pr-4 pt-4">
+         <h1 class="pb-4">Footer</h1>
+
+
+         <h2 class="border-bottom pb-3 pt-4" id="logos-primary">Responsys Footer</h2>
+
+         <div class="panel-group" id="divHead01">
+            <div class="mb-3 mt-4">
+               <a aria-expanded="true" class="align-middle" data-parent="#divHead01" data-target="#comp" data-toggle="collapse" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; font-weight:medium; line-height: 18px;" type="button">
+                  Component
+               </a>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a aria-expanded="false" class="align-middle" data-parent="#divHead01" data-target="#code" data-toggle="collapse" role="button" style="color: #502d91; font-family: 'Boing-Regular'; font-size: 14px; font-weight:medium; line-height: 18px;" type="button">
+                  HTML
+               </a> 
+            </div>
+            <div class="accordion-group">
+               <div class="card collapse mt-4 shadow show" id="comp">
+                  <div class="p-4" style="display:inline-block; float:left;">
+                     <img src="images/img_footer_desktop.jpg" style="float:left; margin-left:20px; margin-right:20px;" width="300" />
+                     <img src="images/img_footer_mobile.jpg" style="float:left;" width="300" />
+                  </div>
+               </div>
+               <div class="mt-2 collapse pt-3 pb-4" id="code">
+                  <script class="border-0 language-markup m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+            <!-- footer -->
+            <tr>
+               <td align="center" class="pxy-md" style="padding-bottom:56px; padding-left:48px; padding-right:48px; padding-top:56px;">
+
+                  <!-- begin desktop footer -->
+                  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#ffffff; border-spacing:0; margin:0 auto; max-width:100%; padding:0; width:100%;" width="100%">
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" class="hideMobile" role="presentation" style="border-spacing:0; margin:0 auto; max-width:600px; padding:0; width:100%;" width="600">
+                              <tr>
+                                 <td align="left" width="50%">
+                                    <table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0; margin:0 auto; max-width:300px; padding:0; width:100%;" width="300">
+                                       <tr>
+                                          <!-- begin logo -->
+                                          <td align="left">
+                                             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tr>
+                                                   <td align="left">
+                                                      <a href="${clickthrough('footer_img_Logo')}">
+                                                         <img alt="Shipt" border="0" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_plum_1407x465.png" style="border:0; color:#180c20; display:block; font-family:'Boing-Bold', Arial, sans-serif; font-size:40px; letter-spacing:normal; line-height:42px; max-width:124px; width:100%;" width="124">
+                                                      </a>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tr>
+                                                   <td align="left" style="padding-top:32px;">
+                                                      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0; margin:0px auto; max-width:280px; width:100%;" width="280">
+                                                         <tr>
+                                                            <td align="center" style="padding-right:16px;">
+                                                               <a href="${clickthrough('footer_social_Facebook')}">
+                                                                  <img alt="Facebook" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Facebook_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                               </a>
+                                                            </td>
+                                                            <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                               <a href="${clickthrough('footer_social_Twitter')}">
+                                                                  <img alt="Twitter" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Twitter_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                               </a>
+                                                            </td>
+                                                            <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                               <a href="${clickthrough('footer_social_Instagram')}">
+                                                                  <img alt="Instagram" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Instagram_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                               </a>
+                                                            </td>
+                                                            <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                               <a href="${clickthrough('footer_social_Pinterest')}">
+                                                                  <img alt="Pinterest" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Pinterest_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                               </a>
+                                                            </td>
+                                                            <td align="center" style="padding-left:16px;">
+                                                               <a href="${clickthrough('footer_social_Contact')}">
+                                                                  <img alt="Contact" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Contact_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                               </a>
+                                                            </td>
+                                                         </tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0; margin:0px auto; max-width:300;" width="300">
+                                                <tr>
+                                                   <td align="left" class="pr-xs" style="padding-top:32px;">
+                                                      <p class="p--legal" style="color:#382f40; font-family:'Boing-Regular', Arial, sans-serif; font-size:12px; line-height:20px; margin:0; padding:0;">
+                                                         Copyright &copy; 2020 Shipt, All rights reserved.
+                                                         <br />
+                                                         17 20th Street N. Birmingham, AL.&nbsp;35203
+                                                      </p>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td align="right" width="50%" valign="bottom">
+                                    <table align="right" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0; margin:0 auto; max-width:300px; padding:0; width:100%;" width="300">
+                                       <tr>
+                                          <td align="right">
+                                             <p class="p--footer-links--medium">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_DontSellMyData')}" style="color:#382f40; text-decoration:none;">
+                                                   Don&rsquo;t Sell My Data
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="right" style="padding-top:16px;">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_PrivacyPolicy')}" style="color:#382f40; text-decoration:none;">
+                                                   Privacy Policy
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="right" style="padding-top:16px;">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_CAPolicyRights')}" style="color:#382f40; text-decoration:none;">
+                                                   CA Policy Rights
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="right" style="padding-top:16px;">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_InterestBasedRights')}" style="color:#382f40; text-decoration:none;">
+                                                   Interest&#8209;Based Ads
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="right" style="padding-top:16px;">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_TermsOfService')}" style="color:#382f40; text-decoration:none;">
+                                                   Terms of Service
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="right" style="padding-top:16px;">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_Unsubscribe')}" style="color:#382f40; text-decoration:none;">
+                                                   Unsubscribe
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table> 
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- end desktop footer -->
+
+                  <!--[if !mso]><!-- -->
+                  <!-- begin mobile footer -->
+                  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#ffffff; border-spacing:0; margin:0 auto; max-width:100%; padding:0; width:100%;" width="100%">
+                     <tr>
+                        <td align="left">
+                           <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="hideDesktop" role="presentation" style="background-color:#ffffff; border-spacing:0; display:none; margin:0 auto; max-width:600px; padding:0; width:100%;" width="600">
+                              <tr>
+
+                                 <!-- begin logo -->
+                                 <td align="left">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; margin:0 auto; padding:0; padding:0;">
+                                       <tr>
+                                          <td align="left">
+                                             <a href="${clickthrough('footer_img_Logo')}">
+                                                <img alt="Shipt" border="0" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_plum_1407x465.png" style="border:0; color:#180c20; display:block; font-family:'Boing-Bold', Arial, sans-serif; font-size:40px; letter-spacing:normal; line-height:42px; max-width:124px; width:100%;" width="124" />
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" style="padding-top:32px;">
+                                    <table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0; margin:0 auto; padding:0;" width="100%">
+                                       <tr>
+                                          <td align="left" width="50%">
+                                             <p class="p--footer-links--medium">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_DontSellMyData')}" style="color:#382f40; text-decoration:none;">
+                                                   Don&rsquo;t Sell My Data
+                                                </a>
+                                             </p>
+                                          </td>
+                                          <td align="left" width="50%">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_InterestBasedRights')}" style="color:#382f40; text-decoration:none;">
+                                                   Interest&#8209;Based Ads
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" style="padding-top:16px;" width="50%">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_PrivacyPolicy')}" style="color:#382f40; text-decoration:none;">
+                                                   Privacy Policy
+                                                </a>
+                                             </p>
+                                          </td>
+                                          <td align="left" style="padding-top:16px;" width="50%">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_TermsOfService')}" style="color:#382f40; text-decoration:none;">
+                                                   Terms of Service
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" style="padding-top:16px;" width="50%">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_CAPolicyRights')}" style="color:#382f40; text-decoration:none;">
+                                                   CA Policy Rights
+                                                </a>
+                                             </p>
+                                          </td>
+                                          <td align="left" style="padding-top:16px;" width="50%">
+                                             <p class="p--footer-links">
+                                                <a class="a--p-shiptgrey" href="${clickthrough('footer_txt_Unsubscribe')}" style="color:#382f40; text-decoration:none;">
+                                                   Unsubscribe
+                                                </a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left" style="padding-top:32px;">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; margin:0px auto;" width="100%">
+                                       <tr>
+                                          <td align="left">
+                                             <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; margin:0px auto" role="presentation">
+                                                <tr>
+                                                   <td align="center" style="padding-right:16px;">
+                                                      <a href="${clickthrough('social_Facebook')}">
+                                                         <img alt="Facebook" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Facebook_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                      </a>
+                                                   </td>
+                                                   <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                      <a href="${clickthrough('social_Twitter')}">
+                                                         <img alt="Twitter" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Twitter_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                      </a>
+                                                   </td>
+                                                   <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                      <a href="${clickthrough('social_Instagram')}">
+                                                         <img alt="Instagram" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Instagram_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                      </a>
+                                                   </td>
+                                                   <td align="center" style="padding-left:16px; padding-right:16px;">
+                                                      <a href="${clickthrough('social_Pinterest')}">
+                                                         <img alt="Pinterest" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Pinterest_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                      </a>
+                                                   </td>
+                                                   <td align="center" style="padding-left:16px;">
+                                                      <a href="${clickthrough('social_Contact')}">
+                                                         <img alt="Contact" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/icon_Contact_60x60.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:30px; width:100%;" width="30" />
+                                                      </a>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left" style="padding-top:32px;">
+                                    <table align="left" role="presentation">
+                                       <tr>
+                                          <td align="right" style="padding-right:16px;">
+                                             <a href="${clickthrough('app_AppleStore')}">
+                                                <img alt="Download on the App Store" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/badge_Download_AppStore_216x64.png" style="border:0; color:#241239; font-family:'Boing-Medium', Arial, sans-serif; display:block; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:108px; text-align:center; width:100%;" width="108" />
+                                             </a>
+                                          </td>
+                                          <td align="left" style="padding-left:16px;">
+                                             <a href="${clickthrough('app_GooglePlay')}">
+                                                <img alt="Get it on Google&nbsp;Play" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/badge_Download_GooglePlay_216x64.png" style="border:0; color:#241239; display:block; font-family:'Boing-Medium', Arial, sans-serif; font-weight:normal; font-size:12px; letter-spacing:normal; line-height:12px; max-width:108px; text-align:center; width:100%;" width="108" />
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left" style="padding-top:32px;">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; margin:0px auto;" width="100%">
+                                       <tr>
+                                          <td align="left">
+                                             <p class="p--legal" style="color:#382f40; font-family:'Boing-Regular', Arial, sans-serif; font-size:12px; line-height:20px; margin:0; padding:0;">
+                                                Copyright &copy; 2020 Shipt, All rights reserved.
+                                                <br />
+                                                17 20th Street N. Birmingham, AL.&nbsp;35203
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- end mobile footer-->
+                  <!--<![endif]-->
+               </td>
+            </tr>
+            <!-- end -->
+                  </script>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="col-2 pl-4 pt-4">
+         <p class="sub-nav--title pb-2">Sections</p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action py-0">Standard Footer</div>
+         </div>
+      </div>
+
+
+
+   </div>
+</div>
+
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
+<script src="js/prism.js"></script>
+<script>
+   var clipboard = new ClipboardJS('.button-copy');
+   clipboard.on('success', function(e) {
+      console.log(e);
+   });
+   clipboard.on('error', function(e) {
+      console.log(e);
+   });
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+   });
+</script>
+<script>
+   $(document).ready(function() {
+      $('.collapse').on('show.bs.collapse', function () {
+         $('.collapse.show').each(function() {
+            $(this).collapse('hide');
+         });
+      });
+   });
+</script>
+
+</body>
+</html>

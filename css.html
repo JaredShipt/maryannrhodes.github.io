@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Shipt Email Design System | Base | CSS</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&display=swap" rel="stylesheet">
+   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+   <link rel="stylesheet" href="css/prism.css">
+   <style type="text/css">
+      @font-face {
+         font-family:   'Boing-Light';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.ttf') format('truetype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Regular';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Medium';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Bold';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Claremont';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Claremont.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Claremont.woff') format('woff');
+      }
+
+      /*                */
+      /*     base       */
+      /*                */
+      h1,
+      p {
+         margin:           0        !important;
+         padding:          0        !important;
+      }
+
+      h1 {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        38px;
+         line-height:      30px;
+         margin:           0;
+      }
+      h2 {
+         color:            #5c5362;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        14px;
+         letter-spacing:   1px;
+         line-height:      14px;
+         text-transform:   uppercase;
+      }
+      *:focus {
+         box-shadow: none !important;
+         outline: none !important;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*   navigation   */
+      /*                */
+      .navbar {
+         background-color: #241239 !important;
+      }
+      .nav--title {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+      }
+      .sub-nav--title {
+         color:            #23cc6b;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+
+      }
+      .nav-link {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+         padding-bottom:   7px         !important;
+         padding-left:     5px         !important;
+         padding-top:      7px         !important;
+      }
+      .indent {
+         padding-left:     16px        !important;
+      }
+      .nav-link:hover {
+         background-color: #fef2d1;
+      }
+      .nav-link a {
+         color:            #382f40;
+         text-decoration:  none;
+      }
+      .active {
+         color:            #23cc6b     !important;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+      }
+      /*----------------*/
+
+      /*                */
+      /*     cards      */
+      /*                */
+      .card-header {
+         color:            #5c5362;
+         background-color: #f9f9f9;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    tooltips    */
+      /*                */
+      .tooltip,
+      .tooltip-inner {
+         color:            #ffffff !important;
+         font-family:      'Boing-Regular', Arial, sans-serif !important;
+         font-size:        14px !important;
+         letter-spacing:   .5px !important;
+         line-height:      26px !important;
+      }
+      .tooltip-inner {
+         box-shadow:       0 2px 15px 0 rgba(0, 0, 0, .5);
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    buttons     */
+      /*                */
+      .btn-circle {
+         border-radius:    8px;
+         box-shadow:       0 1px 2px 0 rgba(0, 0, 0, .1);
+         height:           45px;
+         line-height:      45px;
+         padding:          0;
+         text-align:       center;
+         width:            45px;
+      }
+      .btn-circle {
+         position:         relative;
+      }
+      .btn-code {
+         background-color: #cecbd0;
+         border:           0;
+         border-radius:    8px;
+         color:            #ffffff;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+         font-weight:      normal;
+         font-size:        11px;
+         letter-spacing:   .5px;
+         line-height:      32px;
+         padding:          0 10px;
+         text-align:       center;
+         vertical-align:   middle;
+      }
+      .btn-code i {
+         color:            #ffffff;
+         font-size:        18px;
+         font-weight:      bold;
+         line-height:      25px;
+         margin-right:     4px;
+         vertical-align:   middle;
+      }
+      .btn-circle-sm {
+         font-size:        12px;
+         height:           25px;
+         line-height:      25px;
+         width:            25px;
+      }
+      .btn-circle-lg {
+         font-size:        1.1rem;
+         height:           55px;
+         line-height:      55px;
+         width:            55px;
+      }
+      .btn-circle-xl {
+         font-size:        1.3rem;
+         height:           70px;
+         line-height:      70px;
+         width:            70px;
+      }
+      /*----------------*/
+
+      code.inline {
+         background-color: #f3f3f4;
+         border-radius:    4px;
+         color:            #241239;
+         font-family:      'Source Code Pro', monospace;
+         font-size:        14px;
+         font-weight:      500;
+         padding-bottom:   2px;
+         padding-left:     5px;
+         padding-right:    5px;
+         padding-top:      2px;
+      }
+      code.alert {
+         color:            #533f03;
+         font-family:      'Source Code Pro', monospace;
+         font-size:        13px;
+         font-weight:      bold;
+         letter-spacing:   normal;
+         padding-bottom:   2px;
+         padding-left:     3px;
+         padding-right:    2px;
+         padding-top:      2px;
+      }
+
+      .lead {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        18px;
+         line-height:      26px;
+      }
+
+   </style>
+</head>
+<body>
+
+<nav class="navbar">
+   <div class="container-xl pb-2 pl-0 pt-2">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff;">
+         <img alt="Shipt" class="d-inline-block" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_white_1407x465.png" width="67">
+         <span class="m-0 p-0" style="font-family: 'Boing-Medium', Arial; font-size: 18px; letter-spacing: .5px; line-height: 24px;">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email Design System</span>
+      </a>
+   </div>
+</nav>
+
+<div class="container-xl pt-4">
+   <div class="row row-cols-3">
+
+      <!--                       -->
+      <!--       left nav        -->
+      <!--                       -->
+
+      <div class="col-2 pt-4">
+
+         <p class="nav--title pb-2">
+            Guidelines
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="index.html">
+                  Getting started
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="best-practice.html">
+                  Best practice
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  FAQ
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Base
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="boilerplate.html">
+                  Boilerplate
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a class="active" href="css.html">
+                  <span class="octicon octicon-location"></span>
+                  &nbsp;
+                  CSS
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="grid.html">
+                  Grid
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Styles
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="_bootstrap_colors.html">
+                  Colors
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Iconography
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="logos.html">
+                  Logos
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="typography.html">
+                  Typography
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Components
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Borders
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="buttons.html">
+                  Buttons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="footers.html">
+                  Footers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="headers.html">
+                  Headers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="icons.html">
+                  Icons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="images.html">
+                  Images
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Links
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Promo bars
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Templates
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Transactional
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Member
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Shopper
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!--                       -->
+      <!--       main column     -->
+      <!--                       -->
+
+      <div class="col-8 pl-4 pr-4 pt-4">
+
+         <h1 class="pb-4">
+            CSS
+         </h1>
+
+         <h2 class="border-bottom pb-3 pt-4" id="resets">Resets</h2>
+         <div class="mt-2 pt-3 pb-4">
+<script class="border-0 language-css line-numbers m-0" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  RESETS
+                  ========================================================================== */
+
+                  * {
+                     -ms-text-size-adjust:     100%;
+                     -webkit-font-smoothing:   antialiased;
+                     -webkit-text-size-adjust: none;
+                  }
+
+                  table,
+                  td {
+                     mso-table-lspace: 0pt !important;
+                     mso-table-rspace: 0pt !important;
+                  }
+
+                  div[style*="margin: 16px 0"] {
+                     margin: 0 !important;
+                  }
+
+                  img {
+                     -ms-interpolation-mode: bicubic;
+                  }
+
+                  .a6S {
+                     display: none !important;
+                     opacity: 0.01 !important;
+                  }
+
+                  img.g-img + div {
+                     display: none !important;
+                  }
+
+                  .im {
+                     color: inherit !important;
+                  }
+
+                  #outlook a {
+                     padding: 0;
+                  }
+
+                  #MessageViewBody,
+                  #MessageWebViewDiv {
+                     width: 100% !important;
+                  }
+
+                  .ExternalClass * {
+                     line-height: 105%;
+                     width:       100%;
+                  }
+                  .ReadMsgBody {
+                     width: 100%;
+                  }
+
+                  *[x-apple-data-detectors],
+                  .x-gmail-data-detectors,
+                  .x-gmail-data-detectors *,
+                  .aBn {
+                     border-bottom:       0       !important;
+                     color:               inherit !important;
+                     cursor:              default !important;
+                     font-family:         inherit !important;
+                     font-size:           inherit !important;
+                     font-weight:         inherit !important;
+                     line-height:         inherit !important;
+                     text-decoration:     none    !important;
+                  }
+
+                  u + #body a,
+                  #MessageViewBody a {
+                     color:           inherit;
+                     font-family:     inherit;
+                     font-size:       inherit;
+                     font-weight:     inherit;
+                     line-height:     inherit;
+                     text-decoration: none;
+                  }
+
+               </style>
+            </script>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="custom-fonts">
+            Custom Fonts
+         </h2>
+
+         <div class="mt-2 pt-3 pb-3">
+            <script class="border-0 language-html line-numbers m-0" type="text/plain">
+   <!--[if !mso]><!-- -->
+   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap" rel="stylesheet">
+   <!--<![endif]-->
+            </script>
+         </div>
+         <div class="alert alert-warning align-items-center row ml-1 mr-1" role="alert">
+            <div class="col-1 mr-0 pr-0">
+               <span class="octicon octicon-alert" style="font-size: 25px;"></span>
+            </div>
+            <div class="col" style="font-size: 13px;">
+               <strong>Libre Baskerville</strong> is a Google hosted font that we use as our headline fallback font. This snippet should be added above the first <code class="alert" >&lt;style&gt;</code> tag.
+            </div>
+         </div>
+
+         <div class="mt-3 pb-4 pt-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  CUSTOM FONTS
+                  ========================================================================== */
+
+                  /* Boing */
+                  @font-face {
+                     font-family: "Boing-Light";
+                     font-style:  normal;
+                     font-weight: 300;
+                     src:         url("https://s3.amazonaws.com/shipt-marketing/Boing_Light.otf") format("opentype"),
+                                  url("https://s3.amazonaws.com/shipt-marketing/Boing_Light.woff") format("woff");
+                                  mso-generic-font-family: swiss;
+                  }
+
+                  @font-face {
+                     font-family: "Boing-Regular";
+                     font-style:  normal;
+                     font-weight: normal;
+                     src:         url("https://s3.amazonaws.com/shipt-marketing/Boing_Regular.otf") format("opentype"),
+                                  url("https://s3.amazonaws.com/shipt-marketing/Boing_Regular.woff") format("woff");
+                                  mso-generic-font-family: swiss;
+                  }
+
+                  @font-face {
+                     font-family: "Boing-Medium";
+                     font-style:  normal;
+                     font-weight: 500;
+                     src:         url("https://s3.amazonaws.com/shipt-marketing/Boing_Medium.otf") format("opentype"),
+                                  url("https://s3.amazonaws.com/shipt-marketing/Boing_Medium.woff") format("woff");
+                                  mso-generic-font-family: swiss;
+                  }
+
+                  @font-face {
+                     font-family: "Boing-Bold";
+                     font-style:  normal;
+                     font-weight: 700;
+                     src:         url("https://s3.amazonaws.com/shipt-marketing/Boing_Bold.otf") format("opentype"),
+                                  url("https://s3.amazonaws.com/shipt-marketing/Boing_Bold.woff") format("woff");
+                                  mso-generic-font-family: swiss;
+                  }
+
+                  /* Claremont */
+                  @font-face {
+                     font-family: "Claremont";
+                     font-style:  normal;
+                     font-weight: 500;
+                     src:         url("https://s3.amazonaws.com/shipt-marketing/Claremont.otf") format("opentype"),
+                                  url("https://s3.amazonaws.com/shipt-marketing/Claremont.woff") format("woff");
+                                  mso-generic-font-family: roman;
+                                  mso-font-alt: "Times New Roman";
+                  }
+
+               </style>
+            </script>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="base">Base</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  BASE
+                  ========================================================================== */
+
+                  body,
+                  html {
+                     margin:     0 auto !important;
+                     min-width:  100% !important;
+                     padding:    0 !important;
+                     width:      100% !important;
+                  }
+
+                  img {
+                     border:      0;
+                     display:     block;
+                     height:      auto;
+                     line-height: 100%;
+                     margin:      0 !important;
+                     outline:     none;
+                  }
+
+                  table {
+                     border-collapse:  collapse !important;
+                     border-spacing:   0 !important;
+                     margin:           0 auto !important;
+                     overflow-wrap:    break-word !important;
+                     -ms-word-break:   break-all !important;
+                     table-layout:     fixed !important;
+                     word-break:       break-word !important;
+                     word-wrap:        break-word !important; 
+                  }
+
+               </style>
+            </script>
+         </div>
+         <div class="alert alert-warning align-items-center row ml-1 mr-1" role="alert">
+            <div class="col-1 mr-0 pr-0">
+               <span class="octicon octicon-alert" style="font-size: 25px;"></span>
+            </div>
+            <div class="col" style="font-size: 13px;">
+               If you're having rendering issues with your tables, comment out <code class="alert">table-layout</code>.
+            </div>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="typography">Typography</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <!--[if !mso]><!-- -->
+               <style type="text/css">
+
+               /* ==========================================================================
+                  TYPOGRAPHY
+                  ========================================================================== */
+
+                  h1,
+                  h2,
+                  h3 {
+                     font-family:      'Claremont', 'Libre Baskerville', serif;
+                     font-weight:      500;
+                     letter-spacing:   normal;
+                     margin:           0;
+                     padding:          0;
+                  }
+
+                  h1 {
+                     font-size:        36px !important;
+                     line-height:      42px !important;
+                  }
+
+                  p {
+                     margin:           0;
+                     padding:          0;
+                  }
+
+                     .p--regular {
+                        font-size:        16px;
+                        font-weight:      normal;
+                        letter-spacing:   normal;
+                        line-height:      26px;
+                     }
+
+                     .p--promobar {
+                        font-size:        16px;
+                        font-weight:      bold;
+                        letter-spacing:   1px;
+                        line-height:      12px;
+                        text-transform:   uppercase;
+                     }
+
+                     .p--btn {
+                        font-family:      'Boing-Regular', Arial, sans-serif;
+                        font-size:        16px;
+                        font-weight:      bold;
+                        letter-spacing:   normal;
+                        line-height:      16px;
+                     }
+
+                    .p--disclaimer {
+                      font-size:        11px;
+                      font-weight:      normal;
+                      letter-spacing:   normal;
+                      line-height:      16px;
+                    }
+
+                     .p--legal {
+                        font-size:        12px;
+                        font-weight:      normal;
+                        letter-spacing:   normal;
+                        line-height:      20px;
+                     }
+
+                     .p--shiptgrey {
+                        color:            #382f40;
+                        text-decoration:  none;
+                     }
+
+                        .p--shiptgrey:hover {
+                                     color:  #382f40 !important;
+                               font-family:  'Boing-Regular', Arial, sans-serif !important;
+                               font-weight:  bold !important;
+                           text-decoration:  underline !important;
+                        }
+
+                     .p--shiptgreen {
+                        color:            #038767;
+                        text-decoration:  none;
+                     }
+
+                        .p--shiptgreen:hover {
+                                     color:  #038767 !important;
+                               font-family:  'Boing-Regular', Arial, sans-serif !important;
+                               font-weight:  bold !important;
+                           text-decoration:  underline !important;
+                        }
+
+                     .p--white--bold {
+                        color:            #ffffff;
+                        text-decoration:  none;
+                     }
+
+                        .p--white--bold:hover {
+                                     color:  #038767 !important;
+                               font-family:  'Boing-Bold', Arial, sans-serif !important;
+                               font-weight:  bold !important;
+                        }
+
+
+               </style>
+               <!--<![endif]-->
+            </script>
+         </div>
+         <div class="alert alert-warning align-items-center row ml-1 mr-1" role="alert">
+            <div class="col-1 mr-0 pr-0">
+               <span class="octicon octicon-alert" style="font-size: 25px;"></span>
+            </div>
+            <div class="col" style="font-size: 13px;">
+               These styles are hidden from Outlook.
+            </div>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="components">Components</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  COMPONENTS
+                  ========================================================================== */
+
+                  .border-radius-8 {
+                     border-radius:          8px !important;
+                     -moz-border-radius:     8px !important;
+                     -webkit-border-radius:  8px !important;
+                  }
+
+                  .btn {
+                     border-radius:          8px;
+                     -moz-border-radius:     8px;
+                     -webkit-border-radius:  8px;
+                     padding-bottom:         24px;
+                     padding-left:           48px;
+                     padding-right:          48px;
+                     padding-top:            24px;
+                     transition:             all 300ms ease-in;
+                  }
+
+                     /* green CTA button with white text */
+                     .btn--bg-shiptgreen {
+                        background-color:    #038767;
+                        color:               #ffffff;
+                     }
+                        .btn--bg-shiptgreen:hover {
+                           background-color: #026c52 !important;
+                                      color: #ffffff !important;
+                        }
+
+                     /* white CTA button with green text */
+                     .btn--bg-white {
+                        background-color:    #ffffff;
+                        border:              solid 1px #382f40;
+                        color:               #382f40;
+                     }
+                        .btn--bg-white:hover {
+                           background-color: #382f40 !important;
+                                      color: #ffffff !important;
+                        }
+
+                  .hideDesktop {
+                     display: none !important;
+                  }
+
+                  .curved-top {
+                     border-top-right-radius: 8px !important;
+                     border-top-left-radius: 8px !important;
+                  }
+                  .curved-bottom {
+                     border-bottom-right-radius: 100% !important;
+                     border-bottom-left-radius: 100% !important;
+                  }
+                  .curved-bottom {
+                     border-bottom-right-radius: 45%;
+                     border-bottom-left-radius: 45%;
+                  }
+
+               </style>
+            </script>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="600-breakpoint">600px Breakpoint</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  MEDIA QUERY: 600px
+                  ========================================================================== */
+
+                  @media only screen and (max-width:600px) {
+
+                  /* ===============================
+                     TYPOGRAPHY
+                     =============================== */
+
+                     h1 {
+                        font-size:     32px !important;
+                        line-height:   36px !important;
+                     }
+
+                     h2 {
+                        font-size:     28px !important;
+                        line-height:   32px !important;
+                     }
+
+                     h3 {
+                        font-size:     24px !important;
+                        line-height:   20px !important;
+                     }
+
+                     p {
+                        margin:        0;
+                        padding:       0;
+                     }
+
+                        .p--promobar {
+                           font-size:        14px !important;
+                           font-weight:      bold !important;
+                           letter-spacing:   1.5px !important;
+                           line-height:      12px !important;
+                           text-transform:   uppercase !important;
+                        }
+
+                        .p--btn {
+                           font-family:      'Boing-Regular', Arial, sans-serif;
+                           font-size:        16px !important;
+                           font-weight:      bold;
+                           letter-spacing:   normal;
+                           line-height:      16px;
+                        }
+
+                        .p--legal {
+                           color:            #382f40;
+                           font-size:        12px;
+                           font-weight:      normal;
+                           letter-spacing:   normal;
+                           line-height:      20px;
+                        }
+
+                  /* ===============================
+                     COMPONENTS
+                     =============================== */
+
+                     .btn {
+                        border-radius:          8px;
+                        padding:                24px 40px !important;
+                        transition:             all 300ms ease-in;
+                        -moz-border-radius:     8px;
+                        -webkit-border-radius:  8px;
+                     }
+
+                     .cont--footer {
+                        text-align: center !important;
+                        margin:     0 auto !important;
+                        padding:    auto !important;
+                        max-width:  auto !important;
+                        width:      80% !important;
+                     }
+
+                     /* stacks two horizontal table cells on mobile devices */
+                     .mobile-stack {
+                        clear:      both !important;
+                        display:    block !important;
+                        margin:     0 auto !important;
+                        padding:    0 auto !important;
+                        text-align: center !important;
+                        width:      100%    !important;
+                     }
+
+                     /* mobile alignment */
+                     .align-center {
+                        margin:     0 auto  !important;
+                        padding:    0 auto  !important;
+                        text-align: center  !important;
+                        width:      100%    !important;
+                     }
+
+                     .mobile-stack-img {
+                        margin:     0 auto !important;
+                        max-width:  auto !important;
+                        text-align: center !important;
+                        width:      100% !important;
+                     }
+
+                     .hideMobile  { display: none  !important; }
+                     .hideDesktop { display: block !important; }
+
+                  /* ===============================
+                     PADDING
+                     =============================== */
+
+                     /**
+                      *    mobile padding classes - included in each breakpoint
+                      *    left and right padding in percent
+                      *    top and bottom padding in pixel
+                      */
+
+                     .px-0 {
+                        padding-left:  0   !important;
+                        padding-right: 0   !important;
+                     }
+                     .px-xs {
+                        padding-left:  5%  !important;
+                        padding-right: 5%  !important;
+                     }
+                     .px-sm {
+                        padding-left:  10% !important;
+                        padding-right: 10% !important;
+                     }
+                     .px-md {
+                        padding-left:  15% !important;
+                        padding-right: 15% !important;
+                     }
+                     .px-lg {
+                        padding-left:  20% !important;
+                        padding-right: 20% !important;
+                     }
+                     .px-xl {
+                        padding-left:  25% !important;
+                        padding-right: 25% !important;
+                     }
+
+                     .pl-0  { padding-left:  0    !important; }
+                     .pr-0  { padding-right: 0    !important; }
+                     .pl-8  { padding-left:  8px  !important; }
+                     .pr-8  { padding-right: 8px  !important; }
+                     .pl-16 { padding-left:  16px !important; }
+                     .pr-16 { padding-right: 16px !important; }
+
+                     .pb-0  { padding-bottom:   0px  !important; }
+                     .pb-8  { padding-bottom:   8px  !important; }
+                     .pb-16 { padding-bottom:  16px  !important; }
+                     .pb-24 { padding-bottom:  24px  !important; }
+                     .pb-32 { padding-bottom:  32px  !important; }
+                     .pb-40 { padding-bottom:  40px  !important; }
+
+                     .pt-0  { padding-top:   0px  !important; }
+                     .pt-8  { padding-top:   8px  !important; }
+                     .pt-16 { padding-top:  16px  !important; }
+                     .pt-24 { padding-top:  24px  !important; }
+                     .pt-32 { padding-top:  32px  !important; }
+                     .pt-40 { padding-top:  40px  !important; }
+
+                  }
+
+               </style>
+            </script>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="380-breakpoint">380px Breakpoint</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <style type="text/css">
+
+               /* ==========================================================================
+                  MEDIA QUERY: 380px
+                  ========================================================================== */
+
+                  @media only screen and (max-width: 380px) {
+
+                  /* ===============================
+                     TYPOGRAPHY
+                     =============================== */
+
+                     h1 {
+                        font-size:     28px !important;
+                        line-height:   32px !important;
+                     }
+
+                     h2 {
+                        font-size:     24px !important;
+                        line-height:   28px !important;
+                     }
+
+                     h3 {
+                        font-size:     20px !important;
+                        line-height:   24px !important;
+                     }
+
+                     p {
+                        margin:        0;
+                        padding:       0;
+                     }
+
+                        .p--btn {
+                           font-family:      'Boing-Regular', Arial, sans-serif !important;
+                           font-size:        14px !important;
+                           font-weight:      bold !important;
+                           letter-spacing:   .5px !important;
+                           line-height:      14px !important;
+                        }
+
+                        .p--legal {
+                           font-size:        10px !important;
+                           font-weight:      normal !important;
+                           letter-spacing:   normal !important;
+                           line-height:      18px !important;
+                        }
+
+                        .p--promobar {
+                           font-size:        12px !important;
+                           font-weight:      bold !important;
+                           letter-spacing:   1.5px !important;
+                           line-height:      12px !important;
+                           text-transform:   uppercase !important;
+                        }
+
+                        .p--regular {
+                           color:            #382f40 !important;
+                           font-size:        14px !important;
+                           font-weight:      normal !important;
+                           letter-spacing:   normal !important;
+                           line-height:      24px !important;
+                        }
+
+                  /* ===============================
+                     COMPONENTS
+                     =============================== */
+
+                     .btn {
+                        padding:    24px 24px !important;
+                     }
+
+                     .cont--footer {
+                        text-align: center !important;
+                        margin:     0 auto !important;
+                        padding:    auto   !important;
+                        max-width:  auto   !important;
+                        width:      85%    !important;
+                     }
+
+                  /* ===============================
+                     PADDING
+                     =============================== */
+
+                     .px-0 {
+                        padding-left:  0    !important;
+                        padding-right: 0    !important;
+                     }
+                     .px-xs {
+                        padding-left:  2.5% !important;
+                        padding-right: 2.5% !important;
+                     }
+                     .px-sm {
+                        padding-left:  5%   !important;
+                        padding-right: 5%   !important;
+                     }
+                     .px-md {
+                        padding-left:  10%  !important;
+                        padding-right: 10%  !important;
+                     }
+                     .px-lg {
+                        padding-left:  15%  !important;
+                        padding-right: 15%  !important;
+                     }
+                     .px-xl {
+                        padding-left:  20%  !important;
+                        padding-right: 20%  !important;
+                     }
+
+                     .px-16 {
+                        padding-left:  16px !important;
+                        padding-right: 16px !important;
+                     }
+
+                  /* ===============================
+                     RESETS
+                     =============================== */
+
+                     u ~ div .full-wrap { min-width: 100vw; }
+                  }
+               </style>
+            </script>
+         </div>
+
+         <h2 class="border-bottom pb-3 pt-4" id="outlook-styles">Outlook Styles</h2>
+         <div class="mt-2 pt-3 pb-4">
+            <script class="border-0 language-css m-0" style="border: 0 !important; outline: none !important; overflow: visible !important;" type="text/plain">
+               <!--[if mso]>
+               <style type="text/css">
+
+                  /* ===============================
+                     TYPOGRAPHY
+                     =============================== */
+
+                  .h--bold {
+                     font-weight: bold !important;
+                  }
+
+                  p {
+                     margin:  0;
+                     padding: 0;
+                  }
+
+                     .p--bold {
+                        font-weight: bold !important;
+                     }
+
+                     .p--btn {
+                        letter-spacing: normal !important;
+                     }
+
+                  /* ===============================
+                     COMPONENTS
+                     =============================== */
+
+                  .cont--foter {
+                     padding-left:  10% !important;
+                     padding-right: 10% !important;
+                  }
+
+                  /* ===============================
+                     PADDING
+                     =============================== */
+
+                  .px-0 {
+                     padding-left:  0% !important;
+                     padding-right: 0% !important;
+                  }
+                  .px-xs {
+                     padding-left:  2% !important;
+                     padding-right: 2% !important;
+                  }
+                  .px-sm {
+                     padding-left:  5% !important;
+                     padding-right: 5% !important;
+                  }
+                  .px-md {
+                     padding-left:  15% !important;
+                     padding-right: 15% !important;
+                  }
+                  .px-lg {
+                     padding-left:  15% !important;
+                     padding-right: 15% !important;
+                  }
+                  .px-xl {
+                     padding-left:  20% !important;
+                     padding-right: 20% !important;
+                  }
+
+               </style>
+               <xml>
+                  <o:OfficeDocumentSettings>
+                  <o:AllowPNG/>
+                  <o:PixelsPerInch>96</o:PixelsPerInch>
+                  </o:OfficeDocumentSettings>
+               </xml>
+               <![endif]-->
+            </script>
+         </div>
+
+      </div>
+
+      <!--                       -->
+      <!--      right nav        -->
+      <!--                       -->
+
+      <div class="col-2 pl-4 pt-4">
+         <p class="sub-nav--title pb-2">Sections</p>
+         <div class="d-flex flex-column">
+            <a class="nav-link list-group-item-action py-0" href="#resets">Resets</a>
+            <a class="nav-link list-group-item-action py-0" href="#custom-fonts">Custom Fonts</a>
+            <a class="nav-link list-group-item-action py-0" href="#base">Base</a>
+            <a class="nav-link list-group-item-action py-0" href="#typography">Typography</a>
+            <a class="nav-link list-group-item-action py-0" href="#components">Components</a>
+            <a class="nav-link list-group-item-action py-0" href="#600-breakpoint">600px Breakpoint</a>
+            <a class="nav-link list-group-item-action py-0" href="#380-breakpoint">380px Breakpoint</a>
+            <a class="nav-link list-group-item-action py-0" href="#outlook-styles">Outlook Styles</a>
+         </div>
+      </div>
+
+   </div>
+</div>
+
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
+<script src="js/prism.js"></script>
+<script>
+   var clipboard = new ClipboardJS('.button-copy');
+   clipboard.on('success', function(e) {
+      console.log(e);
+   });
+   clipboard.on('error', function(e) {
+      console.log(e);
+   });
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+   });
+</script>
+
+</body>
+</html>

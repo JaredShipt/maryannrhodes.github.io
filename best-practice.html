@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Shipt Email Design System | Guidelines | Best Practice</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&display=swap" rel="stylesheet">
+   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+   <link rel="stylesheet" href="css/prism.css">
+   <style type="text/css">
+      @font-face {
+         font-family:   'Boing-Light';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.ttf') format('truetype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Light.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Regular';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Regular.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Medium';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Medium.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Boing-Bold';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Boing_Bold.woff') format('woff');
+      }
+      @font-face {
+         font-family:   'Claremont';
+         src:           url('https://s3.amazonaws.com/shipt-marketing/Claremont.otf') format('opentype'),
+                        url('https://s3.amazonaws.com/shipt-marketing/Claremont.woff') format('woff');
+      }
+
+      /*                */
+      /*     base       */
+      /*                */
+      h1,
+      p {
+         margin:           0        !important;
+         padding:          0        !important;
+      }
+
+      h1 {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        38px;
+         line-height:      30px;
+         margin:           0;
+      }
+      h2 {
+         color:            #5c5362;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        14px;
+         letter-spacing:   1px;
+         line-height:      14px;
+         text-transform:   uppercase;
+      }
+      *:focus {
+         box-shadow: none !important;
+         outline: none !important;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*   navigation   */
+      /*                */
+      .navbar {
+         background-color: #241239 !important;
+      }
+      .nav--title {
+         color:            #180c20;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+      }
+      .sub-nav--title {
+         color:            #23cc6b;
+         font-family:      'Boing-Medium', Arial, sans-serif;
+         font-size:        12px;
+         letter-spacing:   .5px;
+         line-height:      12px;
+         padding-left:     5px         !important;
+         text-transform:   uppercase;
+
+      }
+      .nav-link {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+         padding-bottom:   7px         !important;
+         padding-left:     5px         !important;
+         padding-top:      7px         !important;
+      }
+      .indent {
+         padding-left:     16px        !important;
+      }
+      .nav-link:hover {
+         background-color: #fef2d1;
+      }
+      .nav-link a {
+         color:            #382f40;
+         text-decoration:  none;
+      }
+      .active {
+         color:            #23cc6b     !important;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+      }
+      /*----------------*/
+
+      /*                */
+      /*     cards      */
+      /*                */
+      .card-header {
+         color:            #5c5362;
+         background-color: #f9f9f9;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+         font-size:        14px;
+         line-height:      14px;
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    tooltips    */
+      /*                */
+      .tooltip,
+      .tooltip-inner {
+         color:            #ffffff !important;
+         font-family:      'Boing-Regular', Arial, sans-serif !important;
+         font-size:        14px !important;
+         letter-spacing:   .5px !important;
+         line-height:      26px !important;
+      }
+      .tooltip-inner {
+         box-shadow:       0 2px 15px 0 rgba(0, 0, 0, .5);
+      }
+      /*----------------*/
+
+
+      /*                */
+      /*    buttons     */
+      /*                */
+      .btn-circle {
+         border-radius:    8px;
+         box-shadow:       0 1px 2px 0 rgba(0, 0, 0, .1);
+         height:           45px;
+         line-height:      45px;
+         padding:          0;
+         text-align:       center;
+         width:            45px;
+      }
+      .btn-circle {
+         position:         relative;
+      }
+      .btn-code {
+         background-color: #cecbd0;
+         border:           0;
+         border-radius:    8px;
+         color:            #ffffff;
+         font-family:      'Boing-Regular', Arial, sans-serif;
+         font-weight:      normal;
+         font-size:        11px;
+         letter-spacing:   .5px;
+         line-height:      32px;
+         padding:          0 10px;
+         text-align:       center;
+         vertical-align:   middle;
+      }
+      .btn-code i {
+         color:            #ffffff;
+         font-size:        18px;
+         font-weight:      bold;
+         line-height:      25px;
+         margin-right:     4px;
+         vertical-align:   middle;
+      }
+      .btn-circle-sm {
+         font-size:        12px;
+         height:           25px;
+         line-height:      25px;
+         width:            25px;
+      }
+      .btn-circle-lg {
+         font-size:        1.1rem;
+         height:           55px;
+         line-height:      55px;
+         width:            55px;
+      }
+      .btn-circle-xl {
+         font-size:        1.3rem;
+         height:           70px;
+         line-height:      70px;
+         width:            70px;
+      }
+      /*----------------*/
+
+      code.inline {
+         background-color: #f3f3f4;
+         border-radius:    4px;
+         color:            #241239;
+         font-family:      'Source Code Pro', monospace;
+         font-size:        14px;
+         font-weight:      500;
+         padding-bottom:   2px;
+         padding-left:     5px;
+         padding-right:    5px;
+         padding-top:      2px;
+      }
+      code.alert {
+         color:            #180c20;
+         font-family:      'Source Code Pro', monospace;
+         font-size:        13px;
+         font-weight:      bold;
+         letter-spacing:   normal;
+         padding-bottom:   2px;
+         padding-left:     3px;
+         padding-right:    2px;
+         padding-top:      2px;
+      }
+
+      .lead {
+         color:            #382f40;
+         font-family:      'Boing-Light', Arial, sans-serif;
+         font-size:        20px;
+         line-height:      28px;
+      }
+
+   </style>
+</head>
+<body>
+
+<nav class="navbar">
+   <div class="container-xl pb-2 pl-0 pt-2">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff;">
+         <img alt="Shipt" class="d-inline-block" src="https://static.cdn.responsys.net/i5/responsysimages/content/shiptinc/logo_Shipt_primary_green_white_1407x465.png" width="67">
+         <span class="m-0 p-0" style="font-family: 'Boing-Medium', Arial; font-size: 18px; letter-spacing: .5px; line-height: 24px;">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email Design System</span>
+      </a>
+   </div>
+</nav>
+
+<div class="container-xl pt-4">
+   <div class="row row-cols-3">
+
+      <!--                       -->
+      <!--       left nav        -->
+      <!--                       -->
+
+      <div class="col-2 pt-4">
+
+         <p class="nav--title pb-2">
+            Guidelines
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="index.html">
+                  Getting started
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a class="active" href="best-practice.html">
+                  <span class="octicon octicon-location"></span>
+                  &nbsp;
+                  Best practice
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  FAQ
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Base
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="boilerplate.html">
+                  Boilerplate
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="css.html">
+                  CSS
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="grid.html">
+                  Grid
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Styles
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a href="colors.html">
+                  Colors
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Iconography
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="logos.html">
+                  Logos
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="typography.html">
+                  Typography
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Components
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Borders
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="buttons.html">
+                  Buttons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="footers.html">
+                  Footers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="headers.html">
+                  Headers
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="icons.html">
+                  Icons
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="images.html">
+                  Images
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Links
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a href="promo-bars.html">
+                  Promo bars
+               </a>
+            </div>
+         </div>
+
+         <p class="nav--title pb-2 pt-4">
+            Templates
+         </p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Transactional
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Member
+               </a>
+            </div>
+            <div class="nav-link list-group-item-action p-0">
+               <a style="color:#c0c0c0;" href="#">
+                  Shopper
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!--                       -->
+      <!--       main column     -->
+      <!--                       -->
+
+      <div class="col-8 pb-4 pl-4 pr-4 pt-4">
+         
+         <h1>
+            Best practice
+         </h1>
+
+         <ul class="list-group mb-4 mt-4">
+            <li class="list-group-item">Gmail clips messages larger than 102kB - If your email's size exceeds 102kB, Gmail will display the first 102kB along with a message that reads: "[Message clipped] View entire message" and when the user clicks to view the entire message, your email will be displayed in a new window.</li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+         </ul>
+ 
+      </div>
+
+
+
+      <div class="col-2 pl-4 pt-4">
+         <p class="sub-nav--title pb-2">Sections</p>
+         <div class="d-flex flex-column">
+            <div class="nav-link list-group-item-action p-0">Headlines</div>
+               <div class="nav-link indent list-group-item-action py-0">Type scale</div>
+            <div class="nav-link list-group-item-action p-0">Body copy</div>
+               <div class="nav-link indent list-group-item-action py-0">Type scale</div>
+         </div>
+      </div>
+
+
+
+   </div>
+</div>
+
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
+<script src="prism.js"></script>
+<script>
+   var clipboard = new ClipboardJS('.button-copy');
+   clipboard.on('success', function(e) {
+      console.log(e);
+   });
+   clipboard.on('error', function(e) {
+      console.log(e);
+   });
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+   });
+</script>
+
+</body>
+</html>
